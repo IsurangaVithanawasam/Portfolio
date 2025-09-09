@@ -1,3 +1,5 @@
+const { Outfit, Ovo } = require('next/font/google');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -6,7 +8,17 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}", // Components
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        lightHover: '#fcf4ff',
+        darkHover: '#2a004a',
+        darkTheme:'#11001F',
+      },
+      fontFamily: {
+        Outfit: ["Outfit", "sans-serif"],
+        Ovo: ["Ovo", "serif"]
+      }
+    },
   },
   plugins: [],
 }
