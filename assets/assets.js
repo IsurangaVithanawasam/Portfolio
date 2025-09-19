@@ -10,6 +10,7 @@ import firebase from './firebase.png';
 import figma from './figma.png';
 import git from './git.png';
 import mongodb from './mongodb.png';
+import intellij from './intellij.png';
 import right_arrow_white from './right-arrow-white.png';
 import logo from './logo.png';
 import logo_dark from './logo_dark.png';
@@ -35,6 +36,7 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import front_end_icon from './front-end-icon.jpg';
 
 export const assets = {
     user_image,
@@ -49,6 +51,7 @@ export const assets = {
     figma,
     git,
     mongodb,
+    intellij,
     right_arrow_white,
     logo,
     logo_dark,
@@ -73,22 +76,23 @@ export const assets = {
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
+    front_end_icon
 };
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
+        title: 'ListMaster-To-do-app-back-end',
+        description: 'Backend Development',
         bgImage: '/work-1.png',
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
+        title: 'ListMaster-To-do-app-front-end',
+        description: 'Frontend Development',
         bgImage: '/work-2.png',
     },
     {
-        title: 'Photography site',
+        title: 'SalePro-POS-System',
         description: 'Web Design',
         bgImage: '/work-3.png',
     },
@@ -100,18 +104,18 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
+    { icon: assets.web_icon, title: 'Backend Development(Java, Spring Boot)', description: 'Custom APIs, database integration, and server-side logic for scalable applications.', link: '' },
+    { icon: assets.front_end_icon, title: 'Frontend Development (React.js, Tailwind CSS)', description: 'Responsive UI design with modern frameworks and clean code.', link: '' },
     { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
+    { icon: assets.graphics_icon, title: 'E-commerce Solutions', description: 'Include shopping carts, secure payment gateways, product catalogs, and inventory management systems.', link: '' },
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'Java, HTML, CSS, JavaScript, React Js,  Angular, Next Js' },
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'BIT - University of Colombo' },
     { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    assets.vscode, assets.intellij, assets.firebase, assets.mongodb, assets.figma, assets.git
 ];
