@@ -104,10 +104,14 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Backend Development(Java, Spring Boot)', description: 'Custom APIs, database integration, and server-side logic for scalable applications.', link: '' },
-    { icon: assets.front_end_icon, title: 'Frontend Development (React.js, Tailwind CSS)', description: 'Responsive UI design with modern frameworks and clean code.', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'E-commerce Solutions', description: 'Include shopping carts, secure payment gateways, product catalogs, and inventory management systems.', link: '' },
+    { icon: assets.web_icon, title: 'Backend Development(Java, Spring Boot)', description: 'Custom APIs, database integration, and server-side logic for scalable applications.', 
+        link: 'https://github.com/IsurangaVithanawasam/ListMaster-To-do-app-back-end' },
+    { icon: assets.front_end_icon, title: 'Frontend Development (React.js, Tailwind CSS)', description: 'Responsive UI design with modern frameworks and clean code.', 
+        link: ' https://github.com/IsurangaVithanawasam/ListMaster-To-do-app-front-end' },
+    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', 
+        link: 'https://github.com/IsurangaVithanawasam/Fiverr-website-clone?tab=readme-ov-file' },
+    { icon: assets.graphics_icon, title: 'E-commerce Solutions', description: 'Include shopping carts, secure payment gateways, product catalogs, and inventory management systems.', 
+        link: 'https://github.com/IsurangaVithanawasam/SalePro-POS-System' },
 ]
 
 export const infoList = [
