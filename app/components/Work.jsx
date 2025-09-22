@@ -7,13 +7,13 @@ const Work = () => {
     <div id='work' className='w-full px-[12%] py-10 scroll-mt-20'>
         <h4 className='text-center mb-2 text-lg font-Ovo'>
         My portfolio</h4>
-      <h2 className='text-center text-5xl font-Ovo'>
-        My latest work</h2>
+        <h2 className='text-center text-5xl font-Ovo'>
+            My latest work</h2>
 
-      <p className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
-        Welcome to my web development portfolio. Here you'll find full stack projects 
-        that highlight my coding skills, creative thinking, and focus on building clean, reliable solutions.
-      </p>
+        <p className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
+            Welcome to my web development portfolio. Here you'll find full stack projects 
+            that highlight my coding skills, creative thinking, and focus on building clean, reliable solutions.
+        </p>
 
       <div className='grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] my-10 gap-5'>
         {workData.map((project, index)=>(
