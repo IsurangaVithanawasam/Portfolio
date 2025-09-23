@@ -30,7 +30,7 @@ const [result, setResult] = useState("");
   };
 
   return (
-    <div id='contact' className='w-full px-[12%] py-10 scroll-mt-20 bg-[url("/footer-bg-color.png")] 
+    <div id='contact' className='w-full px-[12%] py-10 scroll-mt-10 bg-[url("/footer-bg-color.png")] 
     bg-no-repeat bg-center bg-[length:90%_auto]
      '>
         <h4 className='text-center mb-2 text-lg font-Ovo'>
@@ -39,7 +39,7 @@ const [result, setResult] = useState("");
         <h2 className='text-center text-5xl font-Ovo'>
             Get in touch</h2>
 
-        <p className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
+        <p className='text-center max-w-2xl mx-auto mt-5 mb-5 font-Ovo'>
             I'm always open to collaborating on interesting projects. If you have an 
             idea or project you'd like to work on together, feel free to reach out!
         </p>
