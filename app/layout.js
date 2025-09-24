@@ -1,5 +1,6 @@
 import { Outfit, Ovo } from "next/font/google";
 import "./globals.css";
+import tailwindConfig from "@/tailwind.config.mjs";
 
 const outfit = Outfit({
   subsets: ["latin"], weight: ["400", "500", "600", "700"]
@@ -19,7 +20,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className="scroll-smooth">
       <body
         className={`${outfit.className} ${ovo.className} antialiased leading-8
-        overflow-x-hidden`}
+        overflow-x-hidden dark:text-white dark:bg-[#11001F]`}
       >
         {children}
       </body>

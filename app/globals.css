@@ -10,3 +10,46 @@
 *{
   font-family: Outfit;
 }
+/* @tailwind base; */
+/* @tailwind components; */
+@tailwind utilities;
+
+/* Optional: fallback font if Tailwind fails */
+body {
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Ovo font for headings or specific elements */
+h1, h2, h3, .ovo {
+  font-family: 'Ovo', serif;
+}
+
+/* Light mode styles */
+body {
+  background-color: white;
+  color: black;
+}
+
+/* Dark mode styles triggered by .dark class on <html> */
+.dark body {
+  background-color: #11001F;
+  color: white;
+}
+
+/* Custom hover colors */
+.light-hover:hover {
+  background-color: #fcf4ff;
+}
+
+.dark-hover:hover {
+  background-color: #2a004a;
+}
+
+/* Box shadows */
+.shadow-black {
+  box-shadow: 4px 4px 0 #000;
+}
+
+.shadow-white {
+  box-shadow: 4px 4px 0 #fff;
+}

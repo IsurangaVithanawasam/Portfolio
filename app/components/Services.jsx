@@ -2,7 +2,7 @@ import { assets, serviceData } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
 
-const Services = () => {
+const Services = ({isDarkMode}) => {
   return (
     <div id='services' className='w-full px-[12%] py-10 scroll-mt-10'>
       <h4 className='text-center mb-2 text-lg font-Ovo'>
@@ -18,18 +18,18 @@ const Services = () => {
       <div className='grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-6 my-10'>
             {serviceData.map(({icon, title, description, link}, index)=>(
                     <div key={index} 
-                    className='border border-gray-400 rounded-lg px-8 py-12 hover:bg-rose-50 
-                    hover:-translate-y-1 cursor-pointer shadow hover:shadow-black duration-500'>
+                    className={`border border-gray-400 rounded-lg px-8 py-12  
+                    hover:-translate-y-1 cursor-pointer shadow  duration-500 ${isDarkMode? 'hover:bg-[#2a004a] hover:shadow-white':'hover:bg-[#fcf4ff] hover:shadow-black'}`}>
                         <Image src={icon} alt='title' className='w-10'/>
 
-                        <h3 className='text-lg my-4 text-gray-700'>{title}</h3>
+                        <h3 className={`text-lg my-4  ${isDarkMode?'text-white':'text-gray-700'}`}>{title}</h3>
 
-                        <p className='text-sm text-gray-600 leading-5'>
+                        <p className={`text-sm  leading-5 ${isDarkMode?'text-white':'text-gray-600'}`}>
                           {description}
                         </p>
 
                         <a href={link} className='flex items-center gap-2 text-sm mt-5'>
-                          Read more <Image src={assets.right_arrow} alt='' className='w-4'/>
+                          Read more <Image src={isDarkMode? assets.right_arrow_white :assets.right_arrow} alt='' className='w-4'/>
                         </a>
                     </div>
             ))}
